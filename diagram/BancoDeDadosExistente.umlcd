@@ -1,0 +1,2103 @@
+{
+  "cells": [
+    {
+      "allowConfiguration": false,
+      "angle": 0,
+      "apiPath": "${webRoot}/raml/${packageRoot?replace(\".\", \"/\")}/api.raml",
+      "async": {
+        "batchSize": 500
+      },
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "stroke": "#C2C2C2",
+          "stroke-width": 1
+        },
+        ".uml-class-attrs-text": {
+          "fill": "#666",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11
+        },
+        ".uml-class-attrs-value": {
+          "fill": "#0066FF",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "stroke": "#C2C2C2",
+          "stroke-width": 1
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "stroke": "#C2C2C2",
+          "stroke-width": 1
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 12,
+          "font-weight": "bold"
+        }
+      },
+      "chkApi": false,
+      "dataSource": "jdbc/employees",
+      "disableCache": false,
+      "generationType": "none",
+      "id": "paperCell",
+      "methods": [],
+      "namespace": "BancoDeDadosExistente",
+      "position": {
+        "x": -36,
+        "y": 236
+      },
+      "queries": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Paper",
+      "size": {
+        "height": 0,
+        "width": 0
+      },
+      "sqlDebugging": false,
+      "type": "basic.Rect",
+      "visionLikePackage": false,
+      "z": 1
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "empNo:java.lang.Integer",
+        "deptNo:java.lang.String",
+        "fromDate:java.util.Date",
+        "toDate:java.util.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 100,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* empNo\ndeptNo\nfromDate\ntoDate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 148,
+          "text": "Inteiro\nTexto\nData\nData\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "CurrentDeptEmp"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "emp_no",
+        "dept_no",
+        "from_date",
+        "to_date"
+      ],
+      "dbLengths": [
+        "",
+        4,
+        "",
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "empNo",
+          "type": "java.lang.Integer",
+          "dbName": "emp_no",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Emp No",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "deptNo",
+          "type": "java.lang.String",
+          "dbName": "dept_no",
+          "dbLength": 4,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Dept No",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "fromDate",
+          "type": "java.util.Date",
+          "dbName": "from_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "From Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "toDate",
+          "type": "java.util.Date",
+          "dbName": "to_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "To Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": "53b062bc-0d45-4999-9cd2-9a749dcd8f0d",
+      "insertable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Emp No",
+        "Dept No",
+        "From Date",
+        "To Date"
+      ],
+      "methods": [],
+      "modelType": "View",
+      "name": "CurrentDeptEmp",
+      "nullables": [
+        "empNo",
+        "deptNo"
+      ],
+      "position": {
+        "x": 14,
+        "y": 166
+      },
+      "primaryKeys": [
+        "empNo"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 140,
+        "width": 195
+      },
+      "tableName": "current_dept_emp",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "deptNo:java.lang.String",
+        "deptName:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 60,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* deptNo\ndeptName\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 156,
+          "text": "Texto\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,100)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Departments"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "dept_no",
+        "dept_name"
+      ],
+      "dbLengths": [
+        4,
+        40
+      ],
+      "dbPrecisions": [
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "deptNo",
+          "type": "java.lang.String",
+          "dbName": "dept_no",
+          "dbLength": 4,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Dept No",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "deptName",
+          "type": "java.lang.String",
+          "dbName": "dept_name",
+          "dbLength": 40,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Dept Name",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        ""
+      ],
+      "id": "e92bf836-4d4d-4cef-96de-4740bd672dfa",
+      "insertable": [
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Dept No",
+        "Dept Name"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Departments",
+      "nullables": [
+        "deptNo",
+        "deptName"
+      ],
+      "position": {
+        "x": 283,
+        "y": 176
+      },
+      "primaryKeys": [
+        "deptNo"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        ""
+      ],
+      "size": {
+        "height": 120,
+        "width": 195
+      },
+      "tableName": "departments",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "departments:Departments",
+        "employees:Employees",
+        "fromDate:java.util.Date",
+        "toDate:java.util.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 100,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* departments\n* employees\nfromDate\ntoDate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 144,
+          "text": "Departments\nEmployees\nData\nData\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "DeptEmp"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "dept_no",
+        "emp_no",
+        "from_date",
+        "to_date"
+      ],
+      "dbLengths": [
+        4,
+        10,
+        "",
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "departments",
+          "type": "Departments",
+          "dbName": "dept_no",
+          "dbLength": 4,
+          "foreignKeyName": "dept_emp_ibfk_2",
+          "joins": "dept_no:dept_no",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Departments",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "employees",
+          "type": "Employees",
+          "dbName": "emp_no",
+          "dbLength": 10,
+          "foreignKeyName": "dept_emp_ibfk_1",
+          "joins": "emp_no:emp_no",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Employees",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "fromDate",
+          "type": "java.util.Date",
+          "dbName": "from_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "From Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "toDate",
+          "type": "java.util.Date",
+          "dbName": "to_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "To Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "dept_emp_ibfk_2",
+        "dept_emp_ibfk_1",
+        "",
+        ""
+      ],
+      "id": "b26029af-120a-4ab3-b57a-3d71a4af521a",
+      "insertable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "dept_no:dept_no",
+        "emp_no:emp_no",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Departments",
+        "Employees",
+        "From Date",
+        "To Date"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "DeptEmp",
+      "nullables": [
+        "departments",
+        "employees",
+        "fromDate",
+        "toDate"
+      ],
+      "position": {
+        "x": 191.5,
+        "y": 366
+      },
+      "primaryKeys": [
+        "departments",
+        "employees"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 140,
+        "width": 225
+      },
+      "tableName": "dept_emp",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "empNo:java.lang.Integer",
+        "fromDate:java.util.Date",
+        "toDate:java.util.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 80,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* empNo\nfromDate\ntoDate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 154,
+          "text": "Inteiro\nData\nData\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,120)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "DeptEmpLatestDate"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "emp_no",
+        "from_date",
+        "to_date"
+      ],
+      "dbLengths": [
+        "",
+        "",
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "empNo",
+          "type": "java.lang.Integer",
+          "dbName": "emp_no",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Emp No",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "fromDate",
+          "type": "java.util.Date",
+          "dbName": "from_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "From Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "toDate",
+          "type": "java.util.Date",
+          "dbName": "to_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "To Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        ""
+      ],
+      "id": "f4baac90-a3c1-4630-a162-87dba1a29c79",
+      "insertable": [
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Emp No",
+        "From Date",
+        "To Date"
+      ],
+      "methods": [],
+      "modelType": "View",
+      "name": "DeptEmpLatestDate",
+      "nullables": [
+        "empNo"
+      ],
+      "position": {
+        "x": 558,
+        "y": 171
+      },
+      "primaryKeys": [
+        "empNo"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 130,
+        "width": 201
+      },
+      "tableName": "dept_emp_latest_date",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "departments:Departments",
+        "employees:Employees",
+        "fromDate:java.util.Date",
+        "toDate:java.util.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 100,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* departments\n* employees\nfromDate\ntoDate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 144,
+          "text": "Departments\nEmployees\nData\nData\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "DeptManager"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "dept_no",
+        "emp_no",
+        "from_date",
+        "to_date"
+      ],
+      "dbLengths": [
+        4,
+        10,
+        "",
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "departments",
+          "type": "Departments",
+          "dbName": "dept_no",
+          "dbLength": 4,
+          "foreignKeyName": "dept_manager_ibfk_2",
+          "joins": "dept_no:dept_no",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Departments",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "employees",
+          "type": "Employees",
+          "dbName": "emp_no",
+          "dbLength": 10,
+          "foreignKeyName": "dept_manager_ibfk_1",
+          "joins": "emp_no:emp_no",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Employees",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "fromDate",
+          "type": "java.util.Date",
+          "dbName": "from_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "From Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "toDate",
+          "type": "java.util.Date",
+          "dbName": "to_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "To Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "dept_manager_ibfk_2",
+        "dept_manager_ibfk_1",
+        "",
+        ""
+      ],
+      "id": "eb369b97-717b-44c9-8186-a82a635fabe6",
+      "insertable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "dept_no:dept_no",
+        "emp_no:emp_no",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Departments",
+        "Employees",
+        "From Date",
+        "To Date"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "DeptManager",
+      "nullables": [
+        "departments",
+        "employees",
+        "fromDate",
+        "toDate"
+      ],
+      "position": {
+        "x": 480,
+        "y": 394
+      },
+      "primaryKeys": [
+        "departments",
+        "employees"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 140,
+        "width": 225
+      },
+      "tableName": "dept_manager",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "empNo:java.lang.Integer",
+        "birthDate:java.util.Date",
+        "firstName:java.lang.String",
+        "gender:java.lang.String",
+        "hireDate:java.util.Date",
+        "lastName:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 140,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* empNo\nbirthDate\nfirstName\ngender\nhireDate\nlastName\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 148,
+          "text": "Inteiro\nData\nTexto\nTexto\nData\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,180)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Employees"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "emp_no",
+        "birth_date",
+        "first_name",
+        "gender",
+        "hire_date",
+        "last_name"
+      ],
+      "dbLengths": [
+        "",
+        "",
+        14,
+        1,
+        "",
+        16
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "empNo",
+          "type": "java.lang.Integer",
+          "dbName": "emp_no",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Emp No",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "birthDate",
+          "type": "java.util.Date",
+          "dbName": "birth_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Birth Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "firstName",
+          "type": "java.lang.String",
+          "dbName": "first_name",
+          "dbLength": 14,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "First Name",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "gender",
+          "type": "java.lang.String",
+          "dbName": "gender",
+          "dbLength": 1,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Gender",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "hireDate",
+          "type": "java.util.Date",
+          "dbName": "hire_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Hire Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastName",
+          "type": "java.lang.String",
+          "dbName": "last_name",
+          "dbLength": 16,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Last Name",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": "be5a8181-696e-460c-a2e5-e4d1441a5502",
+      "insertable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Emp No",
+        "Birth Date",
+        "First Name",
+        "Gender",
+        "Hire Date",
+        "Last Name"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Employees",
+      "nullables": [
+        "empNo",
+        "birthDate",
+        "firstName",
+        "gender",
+        "hireDate",
+        "lastName"
+      ],
+      "position": {
+        "x": 828,
+        "y": 156
+      },
+      "primaryKeys": [
+        "empNo"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 160,
+        "width": 195
+      },
+      "tableName": "employees",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "employees:Employees",
+        "fromDate:java.util.Date",
+        "salary:java.lang.Integer",
+        "toDate:java.util.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 100,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* employees\n* fromDate\nsalary\ntoDate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 144,
+          "text": "Employees\nData\nInteiro\nData\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Salaries"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "emp_no",
+        "from_date",
+        "salary",
+        "to_date"
+      ],
+      "dbLengths": [
+        10,
+        "",
+        "",
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "employees",
+          "type": "Employees",
+          "dbName": "emp_no",
+          "dbLength": 10,
+          "foreignKeyName": "salaries_ibfk_1",
+          "joins": "emp_no:emp_no",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Employees",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "fromDate",
+          "type": "java.util.Date",
+          "dbName": "from_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "From Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "salary",
+          "type": "java.lang.Integer",
+          "dbName": "salary",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Salary",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "toDate",
+          "type": "java.util.Date",
+          "dbName": "to_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "To Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "salaries_ibfk_1",
+        "",
+        "",
+        ""
+      ],
+      "id": "77b47e29-e38d-4659-97ec-f49149631614",
+      "insertable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "emp_no:emp_no",
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Employees",
+        "From Date",
+        "Salary",
+        "To Date"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Salaries",
+      "nullables": [
+        "employees",
+        "fromDate",
+        "salary",
+        "toDate"
+      ],
+      "position": {
+        "x": 772.5,
+        "y": 366
+      },
+      "primaryKeys": [
+        "employees",
+        "fromDate"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 140,
+        "width": 213
+      },
+      "tableName": "salaries",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "employees:Employees",
+        "fromDate:java.util.Date",
+        "title:java.lang.String",
+        "toDate:java.util.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 100,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* employees\n* fromDate\n* title\ntoDate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 144,
+          "text": "Employees\nData\nTexto\nData\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Titles"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "emp_no",
+        "from_date",
+        "title",
+        "to_date"
+      ],
+      "dbLengths": [
+        10,
+        "",
+        50,
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "employees",
+          "type": "Employees",
+          "dbName": "emp_no",
+          "dbLength": 10,
+          "foreignKeyName": "titles_ibfk_1",
+          "joins": "emp_no:emp_no",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Employees",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "fromDate",
+          "type": "java.util.Date",
+          "dbName": "from_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "From Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "title",
+          "type": "java.lang.String",
+          "dbName": "title",
+          "dbLength": 50,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Title",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "toDate",
+          "type": "java.util.Date",
+          "dbName": "to_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "To Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        }
+      ],
+      "foreignKeysName": [
+        "titles_ibfk_1",
+        "",
+        "",
+        ""
+      ],
+      "id": "8ba1cb31-b4d6-4161-b282-3dbe1880aea3",
+      "insertable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "emp_no:emp_no",
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Employees",
+        "From Date",
+        "Title",
+        "To Date"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Titles",
+      "nullables": [
+        "employees",
+        "fromDate",
+        "title"
+      ],
+      "position": {
+        "x": 1044.5,
+        "y": 366
+      },
+      "primaryKeys": [
+        "employees",
+        "fromDate",
+        "title"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 140,
+        "width": 213
+      },
+      "tableName": "titles",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "062c8f30-bbe6-42f0-a6d5-000ae7fd1409",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "employees:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "be5a8181-696e-460c-a2e5-e4d1441a5502"
+      },
+      "target": {
+        "id": "8ba1cb31-b4d6-4161-b282-3dbe1880aea3"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "0f45d74f-5731-4f14-afea-0cd14c610e66",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "departments:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "e92bf836-4d4d-4cef-96de-4740bd672dfa"
+      },
+      "target": {
+        "id": "b26029af-120a-4ab3-b57a-3d71a4af521a"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "382c2bfb-0438-4e0b-bb20-485375f6d93a",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "employees:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "be5a8181-696e-460c-a2e5-e4d1441a5502"
+      },
+      "target": {
+        "id": "77b47e29-e38d-4659-97ec-f49149631614"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "6c58c215-d59c-4861-8123-a1d035731c05",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "employees:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "be5a8181-696e-460c-a2e5-e4d1441a5502"
+      },
+      "target": {
+        "id": "b26029af-120a-4ab3-b57a-3d71a4af521a"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "6f9a3bfd-6b33-4bd6-9406-0b8a5ca7d3b9",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "employees:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "be5a8181-696e-460c-a2e5-e4d1441a5502"
+      },
+      "target": {
+        "id": "eb369b97-717b-44c9-8186-a82a635fabe6"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "e1ce8824-6535-4238-9024-83ef3c17d906",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "departments:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "e92bf836-4d4d-4cef-96de-4740bd672dfa"
+      },
+      "target": {
+        "id": "eb369b97-717b-44c9-8186-a82a635fabe6"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    }
+  ],
+  "selectedGroup": "",
+  "groups": [
+    {
+      "name": "",
+      "id": "9b18ea39-570d-43a0-a9ac-cc166d00ba41",
+      "cells": [
+        "eb369b97-717b-44c9-8186-a82a635fabe6",
+        "b26029af-120a-4ab3-b57a-3d71a4af521a",
+        "be5a8181-696e-460c-a2e5-e4d1441a5502",
+        "e92bf836-4d4d-4cef-96de-4740bd672dfa",
+        "77b47e29-e38d-4659-97ec-f49149631614",
+        "f4baac90-a3c1-4630-a162-87dba1a29c79",
+        "53b062bc-0d45-4999-9cd2-9a749dcd8f0d",
+        "8ba1cb31-b4d6-4161-b282-3dbe1880aea3"
+      ],
+      "groupPositions": []
+    }
+  ]
+}
